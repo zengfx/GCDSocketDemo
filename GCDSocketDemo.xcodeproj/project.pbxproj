@@ -25,6 +25,7 @@
 		052143BE19B414B700481F8D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052143BD19B414B700481F8D /* CFNetwork.framework */; };
 		052143C219B4150C00481F8D /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 052143C119B4150C00481F8D /* GCDAsyncSocket.m */; };
 		052143C619B4159A00481F8D /* TcpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 052143C519B4159A00481F8D /* TcpClient.m */; };
+		052143C919B41D1400481F8D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 052143C819B41D1400481F8D /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		052143C119B4150C00481F8D /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		052143C419B4159A00481F8D /* TcpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcpClient.h; sourceTree = "<group>"; };
 		052143C519B4159A00481F8D /* TcpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcpClient.m; sourceTree = "<group>"; };
+		052143C719B41D1400481F8D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		052143C819B41D1400481F8D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,8 @@
 		052143C319B4159A00481F8D /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				052143C719B41D1400481F8D /* Reachability.h */,
+				052143C819B41D1400481F8D /* Reachability.m */,
 				052143C419B4159A00481F8D /* TcpClient.h */,
 				052143C519B4159A00481F8D /* TcpClient.m */,
 			);
@@ -287,6 +292,7 @@
 				052143C219B4150C00481F8D /* GCDAsyncSocket.m in Sources */,
 				0521439D19B4146600481F8D /* ViewController.m in Sources */,
 				0521439719B4146500481F8D /* AppDelegate.m in Sources */,
+				052143C919B41D1400481F8D /* Reachability.m in Sources */,
 				0521439319B4146500481F8D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

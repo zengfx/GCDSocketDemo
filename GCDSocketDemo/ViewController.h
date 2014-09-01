@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TcpClient.h"
+#import "Reachability.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<ITcpClient,UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *netcheck_label;
+
+@property (weak, nonatomic) IBOutlet UITextField *sendMsg_label;
+@property (weak, nonatomic) IBOutlet UITextView *tfRecived;
+
+- (IBAction)clickToSendMsg:(id)sender;
 @end

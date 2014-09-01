@@ -16,4 +16,6 @@
 
 #define SOCKET_HOST @"27.17.40.143"
 #define SOCKET_PORT 9988
+
+#define NetUrlCheck @"www.apple.com"
 #endif
