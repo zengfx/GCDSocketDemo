@@ -21,6 +21,10 @@
 		052143A819B4146600481F8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0521438A19B4146500481F8D /* UIKit.framework */; };
 		052143B019B4146600481F8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 052143AE19B4146600481F8D /* InfoPlist.strings */; };
 		052143B219B4146600481F8D /* GCDSocketDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 052143B119B4146600481F8D /* GCDSocketDemoTests.m */; };
+		052143BC19B414A600481F8D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052143BB19B414A600481F8D /* Security.framework */; };
+		052143BE19B414B700481F8D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052143BD19B414B700481F8D /* CFNetwork.framework */; };
+		052143C219B4150C00481F8D /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 052143C119B4150C00481F8D /* GCDAsyncSocket.m */; };
+		052143C619B4159A00481F8D /* TcpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 052143C519B4159A00481F8D /* TcpClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		052143AD19B4146600481F8D /* GCDSocketDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GCDSocketDemoTests-Info.plist"; sourceTree = "<group>"; };
 		052143AF19B4146600481F8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		052143B119B4146600481F8D /* GCDSocketDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDSocketDemoTests.m; sourceTree = "<group>"; };
+		052143BB19B414A600481F8D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		052143BD19B414B700481F8D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		052143C019B4150C00481F8D /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		052143C119B4150C00481F8D /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		052143C419B4159A00481F8D /* TcpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcpClient.h; sourceTree = "<group>"; };
+		052143C519B4159A00481F8D /* TcpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcpClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				052143BE19B414B700481F8D /* CFNetwork.framework in Frameworks */,
+				052143BC19B414A600481F8D /* Security.framework in Frameworks */,
 				0521438919B4146500481F8D /* CoreGraphics.framework in Frameworks */,
 				0521438B19B4146500481F8D /* UIKit.framework in Frameworks */,
 				0521438719B4146500481F8D /* Foundation.framework in Frameworks */,
@@ -82,6 +94,7 @@
 		0521437A19B4146500481F8D = {
 			isa = PBXGroup;
 			children = (
+				052143BF19B4150C00481F8D /* tcp */,
 				0521438C19B4146500481F8D /* GCDSocketDemo */,
 				052143AB19B4146600481F8D /* GCDSocketDemoTests */,
 				0521438519B4146500481F8D /* Frameworks */,
@@ -101,6 +114,8 @@
 		0521438519B4146500481F8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				052143BD19B414B700481F8D /* CFNetwork.framework */,
+				052143BB19B414A600481F8D /* Security.framework */,
 				0521438619B4146500481F8D /* Foundation.framework */,
 				0521438819B4146500481F8D /* CoreGraphics.framework */,
 				0521438A19B4146500481F8D /* UIKit.framework */,
@@ -112,6 +127,7 @@
 		0521438C19B4146500481F8D /* GCDSocketDemo */ = {
 			isa = PBXGroup;
 			children = (
+				052143C319B4159A00481F8D /* utils */,
 				0521439519B4146500481F8D /* AppDelegate.h */,
 				0521439619B4146500481F8D /* AppDelegate.m */,
 				0521439819B4146500481F8D /* Main.storyboard */,
@@ -150,6 +166,24 @@
 				052143AE19B4146600481F8D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		052143BF19B4150C00481F8D /* tcp */ = {
+			isa = PBXGroup;
+			children = (
+				052143C019B4150C00481F8D /* GCDAsyncSocket.h */,
+				052143C119B4150C00481F8D /* GCDAsyncSocket.m */,
+			);
+			path = tcp;
+			sourceTree = "<group>";
+		};
+		052143C319B4159A00481F8D /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				052143C419B4159A00481F8D /* TcpClient.h */,
+				052143C519B4159A00481F8D /* TcpClient.m */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				052143C619B4159A00481F8D /* TcpClient.m in Sources */,
+				052143C219B4150C00481F8D /* GCDAsyncSocket.m in Sources */,
 				0521439D19B4146600481F8D /* ViewController.m in Sources */,
 				0521439719B4146500481F8D /* AppDelegate.m in Sources */,
 				0521439319B4146500481F8D /* main.m in Sources */,
